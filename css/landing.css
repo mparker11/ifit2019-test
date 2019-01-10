@@ -128,9 +128,9 @@ nav .nav-right a:not(:last-of-type) {
     color: #424242;
 }
 #programs-section .section-subtitle {
-    width: 85%;
+    width: 80%;
     margin: 0 auto 40px;
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     color: #424242;
 }
@@ -139,17 +139,18 @@ nav .nav-right a:not(:last-of-type) {
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
     grid-row-gap: 46px;
+    margin-bottom: 
 }
 .program-block .program-title {
     margin-top: 10px;
     margin-bottom: 0;
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 700;
     color: #424242;
 }
 .program-block .program-category {
     margin: 0;
-    font-size: 16px;
+    font-size: 13px;
     font-style: italic;
     color: #929292;
 }
