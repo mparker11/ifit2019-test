@@ -108,3 +108,35 @@ nav .nav-right a:not(:last-of-type) {
     line-height: 24px;
     color: #fdfdfd;
 }
+/*============= PROGRAMS =============*/
+#programs {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 73px;
+    box-sizing: border-box;
+}
+#programs h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    color: #424242;
+}
+#programs p {
+    width: 85%;
+    margin: 0 auto 40px;
+    font-size: 23px;
+    text-align: center;
+    color: #424242;
+}
+#program-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    grid-row-gap: 46px;
+}

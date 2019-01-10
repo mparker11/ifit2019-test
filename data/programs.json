@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Get Fit with Jillian Michaels",
+        "category": "weight loss",
+        "image": "../images/programs/jillian.png"
+    },
+    {
+        "title": "Grand Canyon",
+        "category": "incline trainer",
+        "image": "../images/programs/grand-canyon.png"
+    },
+    {
+        "title": "Power Walk",
+        "category": "walking",
+        "image": "../images/programs/power-walk.png"
+    },
+    {
+        "title": "Elliptical Weight Loss",
+        "category": "weight loss",
+        "image": "../images/programs/elliptical.png"
+    },
+    {
+        "title": "Off Season Weight Loss",
+        "category": "cycling",
+        "image": "../images/programs/off-season.png"
+    },
+    {
+        "title": "Central Park",
+        "category": "fitness",
+        "image": "../images/programs/central-park.png"
+    },
+    {
+        "title": "5K Beginner Training",
+        "category": "running",
+        "image": "../images/programs/5K.png"
+    },
+    {
+        "title": "Going Coastal",
+        "category": "running",
+        "image": "../images/programs/5K.png"
+    },
+    {
+        "title": "Elliptical Weight Loss",
+        "category": "weight loss",
+        "image": "../images/programs/jillian.png"
+    },
+    {
+        "title": "Incline Train",
+        "category": "incline trainer",
+        "image": "../images/programs/paris.png"
+    },
+    {
+        "title": "Paris",
+        "category": "running",
+        "image": "../images/programs/paris.png"
+    },
+    {
+        "title": "Lose Weight with Jillian Michaels",
+        "category": "weight loss",
+        "image": "../images/programs/jillian.png"
+    }
+]
