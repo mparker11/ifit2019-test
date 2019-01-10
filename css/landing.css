@@ -140,3 +140,16 @@ nav .nav-right a:not(:last-of-type) {
     justify-content: space-between;
     grid-row-gap: 46px;
 }
+.program-block .program-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #424242;
+}
+.program-block .program-category {
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+    color: #929292;
+}
