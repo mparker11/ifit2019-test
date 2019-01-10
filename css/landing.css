@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+}
+h1, h2, h3, a, div, p {
+    font-family: 'Roboto', sans-serif;
+}
+/*============= HERO PARENT =============*/
+#hero-area {
+    width: 100%;
+    height: 747px;
+    background-image: url('../images/ifit-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+}
+.split-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 31px;
+    padding-right: 31px;
+    box-sizing: border-box;
+}
+.split-nav a {
+    text-transform: uppercase;
+}
+/*============= HEADER =============*/
+header {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+}
+header .nav-right a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+header .nav-right a:not(:last-of-type) {
+    margin-right: 20px;
+}
+header .nav-right a img {
+    margin-left: 2px;
+    width: 13px; 
+}
+/*============= NAV =============*/
+nav {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(253, 253, 253, 0.8);
+    border-bottom: 1px solid #cecece;
+}
+nav .nav-right a {
+    color: #929292;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .1s ease;
+}
+nav .nav-right a:hover{
+    color: #424242;
+    text-decoration: underline;
+    text-shadow: -0.06ex 0 #424242, 0.06ex 0 #424242; /* Changing the font weight to bold on hover changes the width of the text, making the nav "jump" - this is a way to avoid that */
+}
+nav .nav-right a:not(:last-of-type) {
+    margin-right: 20px;
+}
+.search-button {
+    padding: 0;
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.search-button + input {
+    width: 0;
+    border: none;
+    background-color: transparent;
+}
+/*============= HERO TEXT =============*/
+#hero-text {
+    position: absolute;
+    left: 13%; /* Because the text starts at 185px left of the design. The design is 1400px wide but we need to consider larger screen widths. So 185/1400 = 13%. */
+    bottom: 114px;
+}
+#hero-title {
+    font-weight: 300;
+    font-size: 69px;
+    line-height: 58px;
+    color: #fdfdfd;
+    text-transform: uppercase;
+}
+#hero-description {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fdfdfd;
+}

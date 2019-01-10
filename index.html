@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iFit Test Landing</title>
+
+        <!-- Social Media SEO -->
+        <meta name="description" content="Welcome to the center of it all. The Fitness Shop presents you with hundreds of workout programs designed to guide your weight loss journey." />
+        <meta property="og:title" content="iFit Test Landing" />
+        <meta property="og:description" content="Welcome to the center of it all. The Fitness Shop presents you with hundreds of workout programs designed to guide your weight loss journey." />
+        <meta property="og:image" content="./images/ifit-fb-meta.jpg" /> <!-- Compressed using TinyPNG.com -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- Only load the font styles we need (light, regular, bold) because the load times will be greater the more we load -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" />
+        
+        <link rel="stylesheet" href="./css/landing.css" />
+    </head>
+    <body>
+        <div id="hero-area">
+            <!-- 
+                The design shows the header & nav are placed over the hero image, but the 
+                instructions does not say they are fixed. So we will make them absolute, 
+                relative to a parent
+             -->
+            <header class="split-nav">
+                <div class="nav-left">
+                    <a href="/"><img alt="iFit" src="./images/ifit-logo.png" /></a>
+                </div>
+                <div class="nav-right">
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Menu <img alt="" src="./images/icons/menu.png" /></a>
+                </div>
+            </header>
+            <nav class="split-nav">
+                <div class="nav-left">
+                    <div id="nav-title">Weight Loss</div>
+                </div>
+                <div class="nav-right">
+                    <a href="#">Overview</a>
+                    <a href="#">Features</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Training</a>
+                    <button class="search-button" onclick="handleSearchAnimation()">
+                        <img alt="Search" src="./images/icons/magnifying-glass.png" />
+                    </button>
+                    <input type="text" name="search" placeholder="Enter text here" />
+                </div>
+            </nav>
+            <div id="hero-text">
+                <h1 id="hero-title">Working Out<br />Has Never Been So Fun</h1>
+                <p id="hero-description">
+                    Welcome to the center of it all. The Fitness Shop presents<br /> you 
+                    with hundreds of workout programs designed to guide<br /> your weight loss journey.
+                </p>
+            </div>
+        </div>
+        <footer class="split-nav">
+            <div class="nav-left"></div>
+            <div class="nav-right"></div>
+        </footer>
+
+        <!-- Load JS last to allow site to load faster -->
+        <script type="text/javascript" src="./js/landing.js"></script>
+    </body>
+</html>
