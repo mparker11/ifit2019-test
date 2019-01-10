@@ -139,7 +139,7 @@ nav .nav-right a:not(:last-of-type) {
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
     grid-row-gap: 46px;
-    margin-bottom: 
+    margin-bottom: 50px;
 }
 .program-block .program-title {
     margin-top: 10px;
