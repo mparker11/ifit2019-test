@@ -37,7 +37,7 @@
     {
         "title": "Going Coastal",
         "category": "running",
-        "imageSrc": "../images/programs/5K.png"
+        "imageSrc": "../images/programs/coastal.png"
     },
     {
         "title": "Elliptical Weight Loss",
@@ -47,7 +47,7 @@
     {
         "title": "Incline Train",
         "category": "incline trainer",
-        "imageSrc": "../images/programs/paris.png"
+        "imageSrc": "../images/programs/incline.png"
     },
     {
         "title": "Paris",
