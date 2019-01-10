@@ -15,7 +15,7 @@
         `;
     }
 
-    const programGrid = document.getElementById('programs-grid');
+    const programsGrid = document.getElementById('programs-grid');
     programsGrid.insertAdjacentHTML('beforeend', programsMarkup);
 })();
 
