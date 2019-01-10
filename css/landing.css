@@ -109,7 +109,7 @@ nav .nav-right a:not(:last-of-type) {
     color: #fdfdfd;
 }
 /*============= PROGRAMS =============*/
-#programs {
+#programs-section {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -119,7 +119,7 @@ nav .nav-right a:not(:last-of-type) {
     padding-bottom: 73px;
     box-sizing: border-box;
 }
-#programs h2 {
+#programs-section h2 {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 45px;
@@ -127,14 +127,14 @@ nav .nav-right a:not(:last-of-type) {
     text-align: center;
     color: #424242;
 }
-#programs p {
+#programs-section p {
     width: 85%;
     margin: 0 auto 40px;
     font-size: 23px;
     text-align: center;
     color: #424242;
 }
-#program-grid {
+#programs-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;

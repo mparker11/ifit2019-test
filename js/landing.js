@@ -1,13 +1,26 @@
 (async function() {
     const programs = await fetchPrograms();
-    console.log(programs);
+
+    let programsMarkup = '';
+    for (let i = 0; i < programs.length; i++) {
+        const thisProgram = programs[i];
+        
+        //using template literal but I understand it's not supported on IE 11 and below
+        programsMarkup += `
+            <div class="program-block">
+                <img alt="" src="${thisProgram.imageSrc}" />
+                <p class="program-title">${thisProgram.title}</p>
+                <p class="program-category">${thisProgram.category}</p>
+            </div>
+        `;
+    }
+
+    const programGrid = document.getElementById('programs-grid');
+    programsGrid.insertAdjacentHTML('beforeend', programsMarkup);
 })();
 
 function fetchPrograms() {
     return new Promise((resolve, reject) => {
-        //Chrome does not allow loading local files using fetch 
-        //but this is my preferred method of getting data
-
         fetch('./data/programs.json')
             .then((response) => {
                 return response.json();
@@ -18,23 +31,5 @@ function fetchPrograms() {
             .catch((error) => {
                 reject(error);
             });
-
-
-        //Have to use regular XMLHTTPRequest
-        // try {
-        //     var xobj = new XMLHttpRequest();
-        //     xobj.overrideMimeType("application/json");
-        //     xobj.open('GET', './data/programs.json', true);
-        //     xobj.onreadystatechange = function () {
-        //         if (xobj.readyState == 4 && xobj.status == "200") {
-        //             resolve(xobj.responseText);
-        //         } else {
-        //             reject(null);
-        //         }
-        //     };
-        //     xobj.send();  
-        // } catch (error) {
-        //     reject(error);
-        // }
     });
 }
