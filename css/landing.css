@@ -355,10 +355,12 @@ nav .nav-right a:not(:last-of-type) {
 }
 #slider .slide .quote-block {
     display: flex;
+    align-items: center;
 }
 #slider .slide .quote-block img {
     margin-right: 28px;
     width: 95px;
+    max-height: 85px;
 }
 #slider .slide .quote-block .quote {
     color: #fdfdfd;
