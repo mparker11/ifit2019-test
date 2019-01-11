@@ -123,10 +123,7 @@ nav .nav-right a:not(:last-of-type) {
     width: 180px;
 }
 @media screen and (max-width: 480px) {
-    #nav-title {
-        display: none;
-    }
-    .search-button {
+    #nav-title, .search-button, .search-button + input {
         display: none;
     }
 }
