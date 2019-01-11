@@ -80,6 +80,9 @@ nav {
     background-color: rgba(253, 253, 253, 0.8);
     border-bottom: 1px solid #cecece;
 }
+nav .nav-right {
+    display: flex;
+}
 nav .nav-right a {
     color: #929292;
     font-size: 14px;
@@ -105,8 +108,19 @@ nav .nav-right a:not(:last-of-type) {
 }
 .search-button + input {
     width: 0;
+    position: relative;
+    top: 0;
+    left: 10px;
     border: none;
+    border-bottom: 1px solid #929292;
     background-color: transparent;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    transition: width 1s ease;
+}
+.search-button + input.show {
+    width: 180px;
 }
 @media screen and (max-width: 480px) {
     #nav-title {
@@ -133,6 +147,21 @@ nav .nav-right a:not(:last-of-type) {
     font-size: 24px;
     line-height: 24px;
     color: #fdfdfd;
+}
+/*only animate title for larger screens*/
+@media screen and (min-width: 1025px) {
+    #hero-title, #hero-description {
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+    #hero-title {
+        animation-delay: .5s;
+    }
+    #hero-description {
+        animation-delay: 1s;
+    }
 }
 @media screen and (max-width: 768px) {
     #hero-text {
@@ -195,6 +224,34 @@ nav .nav-right a:not(:last-of-type) {
     justify-content: space-between;
     grid-row-gap: 46px;
     margin-bottom: 50px;
+}
+.program-block {
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .75s ease;
+    -moz-transition: all .75s ease;
+    -ms-transition: all .75s ease;
+    transition: all .75s ease;
+}
+.program-block.show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.program-block img {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.program-block:hover img {
+    box-shadow: 5px 5px 5px #888;
 }
 .program-block .program-title {
     margin-top: 10px;
@@ -483,4 +540,11 @@ footer .nav-right .language-dropdown select {
     footer .nav-left {
         display: none;
     }
+}
+
+
+/*=============== KEYFRAMES ==============*/
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
